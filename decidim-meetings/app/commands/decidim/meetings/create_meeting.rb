@@ -45,7 +45,13 @@ module Decidim
           location_hints: { I18n.locale => form.location_hints },
           author: form.current_user,
           decidim_user_group_id: form.user_group_id,
+<<<<<<< HEAD
           registration_terms: form.current_component.settings.default_registration_terms,
+=======
+          registration_terms: { I18n.locale => form.current_component.settings.default_registration_terms },
+          online_meeting_url: form.online_meeting_url,
+          type_of_meeting: form.clean_type_of_meeting,
+>>>>>>> 269cf5f73... Add online meetings (#6572)
           component: form.current_component
         }
 
